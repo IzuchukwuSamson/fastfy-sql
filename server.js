@@ -5,7 +5,7 @@ const db = require('./utils/db');
 const chalk = require('chalk');
 
 db.authenticate()
-  .then(() => console.log(chalk.yellow('DB Connected Successfully')))
+  .then(() => console.log(chalk.italic.yellow('DB Connected Successfully')))
   .catch((err) => console.log(chalk.red(err)));
 
 const port = process.env.PORT || 3000;
